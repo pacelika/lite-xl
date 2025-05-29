@@ -14,11 +14,13 @@ config.ignore_files = {
 }
 
 config.fps = 120
-config.plugins.scale.default_scale = 1.69
-
 config.tab_type = "hard"
 config.indent_size = 4
 
 lspconfig.clangd.setup()
+lspconfig.rust_analyzer.setup()
+lspconfig.gopls.setup()
+lspconfig.pyright.setup()
 lspconfig.zls.setup()
+lspconfig.tsserver.setup()
 lspconfig.sumneko_lua.setup()
